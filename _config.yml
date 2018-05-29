@@ -1,22 +1,37 @@
-theme: jekyll-theme-cayman
+title: Hello, world! I'm David Freeman
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: ':title/'
+baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
 
-#
-# This file contains configuration flags to customize your site
-#
+# Author Settings
+author: David Freeman # add your name
+author-img: david-freeman.jpg # add your photo
+about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: artemsheludko # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: # add your Email address
 
-# Name of your site (displayed in the header)
-name: Variables ID
+# Disqus
+discus-identifier: mr-brown # add your discus identifier
 
-# Short bio or description (displayed in the header)
-description: A place to play codes
+# Tracker
+analytics: # Google Analytics
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars3.githubusercontent.com/u/39725238?s=400&u=a2ff4a191e74b632ff8f821e505a82c463f15e24&v=4
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
 
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: variables.team@gmail.com
-  facebook:
-  flickr:
-  github: variablesid/variablesid.github.io
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
